@@ -53,12 +53,12 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "OPENROUTER_API_KEY"
-            value = "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"
+            value = "YOUR_OPENROUTER_API_KEY"
             isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "GEMINI_API_KEY"
-            value = "AIzaSyAq3Q27IL2gDFcT7YALsCsK2yJJxyD8Bl8"
+            value = "YOUR_GEMINI_API_KEY"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
