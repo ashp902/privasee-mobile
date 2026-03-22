@@ -98,6 +98,47 @@ Privasee Mobile is built entirely with Apple-native frameworks and modern SwiftU
 - Core Image for local redaction
 - local persistence for scan and threat state
 
+## Repository
+
+This repository contains the full iOS codebase for Privasee Mobile, including the SwiftUI app, local scanning pipeline, persistence logic, and setup configuration.
+
+## Setup
+
+To run the project locally:
+
+1. Clone the repository.
+2. Open `PrivaseeMobile.xcodeproj` in Xcode.
+3. Add a valid Gemini API key.
+4. Build and run the app on an iPhone or supported iOS target.
+
+### Gemini API Key
+
+The app reads `GEMINI_API_KEY` from:
+
+- the Xcode scheme environment variable, or
+- `Info.plist` as a fallback
+
+For local development, the simplest path is to set `GEMINI_API_KEY` in the Xcode scheme or replace the placeholder value in `Info.plist`.
+
+### Photos Permissions
+
+The app requires photo library access to:
+
+- scan recent photos
+- save protected replacements
+- delete original flagged images after replacement
+
+If the user chooses limited access, the current selection can be updated later from the Settings page inside the app.
+
+## Running the App
+
+Once launched, the user can:
+
+- scan the accessible camera roll
+- review flagged images in the threat feed
+- open a flagged photo in full-screen mode
+- blur and replace one photo or all active threats
+
 ## Positioning
 
 Privasee Mobile is not a cloud photo scanner. It is a privacy product designed to help users reduce exposure inside their own library while keeping the most sensitive asset, the image itself, on-device.
